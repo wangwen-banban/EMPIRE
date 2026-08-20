@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "empire-hand-motion"
+version = "0.1.0"
+description = "Two-stage egocentric hand-motion planning and prediction research code"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT AND Apache-2.0 AND CC-BY-NC-4.0"
+license-files = ["LICENSE", "LICENSES/*", "THIRD_PARTY_NOTICES.md"]
+keywords = ["egocentric vision", "hand motion", "flow matching", "vision-language-action"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+model = [
+  "torch>=2.3",
+  "torchvision>=0.18",
+  "transformers>=4.47,<5",
+  "timm>=0.9",
+  "einops>=0.7",
+  "huggingface-hub>=0.25",
+]
+data = [
+  "numpy<2",
+  "scipy>=1.10",
+  "Pillow>=10",
+  "decord>=0.6",
+  "ffmpeg-python>=0.2",
+  "opencv-python>=4.8",
+  "scikit-image>=0.21",
+  # EasternJournalist/utils3d publishes distribution version 0.0.2 only from VCS;
+  # the unrelated PyPI project with the same name does not provide this API.
+  "utils3d @ git+https://github.com/EasternJournalist/utils3d.git@d790d337638ce478972da01e42d7ee255796f7b4",
+  "trimesh>=4.11,<5",
+]
+depth = [
+  "addict>=2.4",
+  "omegaconf>=2.3",
+  "evo>=1.30",
+]
+train = [
+  "accelerate>=0.30",
+  "jsonlines>=4",
+  "rich>=13",
+  "tensorboard>=2.13",
+  "tqdm>=4.65",
+  "wandb>=0.19",
+]
+eval = [
+  "smplx>=0.1.28",
+]
+test = [
+  "build>=1.2",
+  "pytest>=8",
+]
+# Complete supported environment used by the documented install and release gates.
+# Granular groups above remain available for lightweight, task-specific installs.
+public = [
+  "torch>=2.3",
+  "torchvision>=0.18",
+  "transformers>=4.47,<5",
+  "timm>=0.9",
+  "einops>=0.7",
+  "huggingface-hub>=0.25",
+  "numpy<2",
+  "scipy>=1.10",
+  "Pillow>=10",
+  "decord>=0.6",
+  "ffmpeg-python>=0.2",
+  "opencv-python>=4.8",
+  "scikit-image>=0.21",
+  "utils3d @ git+https://github.com/EasternJournalist/utils3d.git@d790d337638ce478972da01e42d7ee255796f7b4",
+  "trimesh>=4.11,<5",
+  "addict>=2.4",
+  "omegaconf>=2.3",
+  "evo>=1.30",
+  "accelerate>=0.30",
+  "jsonlines>=4",
+  "rich>=13",
+  "tensorboard>=2.13",
+  "tqdm>=4.65",
+  "wandb>=0.19",
+  "smplx>=0.1.28",
+]
+
+[tool.setuptools.packages.find]
+include = ["empire*", "depth_anything_3*", "libs*"]
+
+[tool.setuptools.package-data]
+"empire" = ["configs/*.json", "configs/ablations/*.json"]
+"empire.models.depth_anything_3" = ["configs/*.yaml"]

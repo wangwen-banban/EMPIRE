@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments and editors
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.DS_Store
+
+# Builds
+build/
+dist/
+*.egg-info/
+
+# Runtime outputs
+cache/
+checkpoints/
+outputs/
+logs/
+wandb/
+*.log
+*.jsonl
+
+# Model and array artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.pkl
+
+# Media and generated reports
+*.mp4
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.html

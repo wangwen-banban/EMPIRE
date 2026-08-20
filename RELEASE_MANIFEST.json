@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-08-20T17:04:48Z",
+  "manifest": {
+    "path": "RELEASE_MANIFEST.json",
+    "status": "self-excluded",
+    "reason": "The manifest is excluded from its own recursive digest set."
+  },
+  "summary": {
+    "file_count": 117,
+    "total_bytes": 973508,
+    "category_counts": {
+      "configuration": 14,
+      "documentation": 5,
+      "license": 5,
+      "release-metadata": 2,
+      "script": 10,
+      "source": 74,
+      "test": 7
+    }
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "8e9576a6c19ebe31e58c83deccb9f5715966035a240dff90b9af0cd83f9c300d",
+      "category": "release-metadata"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "category": "license"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "category": "license"
+    },
+    {
+      "path": "LICENSES/DiT-CC-BY-NC-4.0.txt",
+      "sha256": "a0ca8b81bb6ae3f50f31f4bcccb3fad03736638dc631cfdb508d108b01bb2cd8",
+      "category": "license"
+    },
+    {
+      "path": "LICENSES/OpenAI-MIT.txt",
+      "sha256": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e",
+      "category": "license"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d19c4cda417ae84f5711ca4d4fd635734eda7043c2025d07bd2607043de5a3ae",
+      "category": "documentation"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "fe8f6f1dc82a555f2150c850667b76b0f88d51a4de4fcae5485172fd1207d8ef",
+      "category": "license"
+    },
+    {
+      "path": "depth_anything_3/__init__.py",
+      "sha256": "67931b1a5f1b1e689bad0c4541620e30ecfc6cd29c2f9c31aaeafec07a56c1ed",
+      "category": "source"
+    },
+    {
+      "path": "docs/DATA_SCHEMA.md",
+      "sha256": "c9a1dd24e1e06f9f074908887786e984ec6462a27994b0832d7ef016d9417300",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/flow_matching_dit_usage.md",
+      "sha256": "69004a4827e6245a3a8cb41a440cda8f446d2dc5672d44c8bf0e7ed98d68f707",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/lr_schedule_config.md",
+      "sha256": "1cfc610d2085319671379bcfbf7ea47114660d3089cda18eb886dbb9ea40e3c7",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/stage2_training_checkpoint_and_freeze_guide.md",
+      "sha256": "7f39438482d569e235a32a0e8744430d0cfc45fc799793f451de618a7aeb3d26",
+      "category": "documentation"
+    },
+    {
+      "path": "empire/__init__.py",
+      "sha256": "453e9b8ae8a347ae0748d5a4e9c41dec01b7bb84465b54076eadfeedbe0419c2",
+      "category": "source"
+    },
+    {
+      "path": "empire/configs/ablations/baseline_caption_only.json",
+      "sha256": "f65d1ef741373715676c54a4f39496a0b53517cfe5a7ae270dee56cd095af8a8",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/depth_concatenation.json",
+      "sha256": "4d990f87b6c2e475e43ec62903d908245c9df38903ea4dc34cfaabc1127e9d07",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/depth_cross_attention.json",
+      "sha256": "3d6e38b7f262ad2904dbb30d5bc34ef6594cc67573a0ea6afb0d2c9f6110cfb5",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/dit_base.json",
+      "sha256": "3fb294e1e62723964711df581d12e5cc1f4685b00e676b52006e9b104e660bfc",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/dit_large.json",
+      "sha256": "4d8dd15f054cf8042a692128bae14efc3d1cdce47f6859d49ff3c05842228d3f",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/dit_small.json",
+      "sha256": "951ca359a95c18d8e07eaa68e35c756b9fd30d0aed8091b3a7d9f0b2e284c7d0",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/frozen_planner.json",
+      "sha256": "6f4ca191e5da93af209701588584cd899f4e6b8808159eb963ce8649d76c356b",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/ground_truth_plan.json",
+      "sha256": "04d41e5c87aa30c19b3143167fcdf08011efb903f0704ad5b5265770a954c2cd",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/plan_conditioning.json",
+      "sha256": "249af1b00570dd0cbaf5c959a5848f712af68213b90b28a6cdbc6d308615a594",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/predicted_plan.json",
+      "sha256": "b3f484b8a3bd60fb00005719065db45d13d1707eb6018af070a21310cd620058",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/single_stage_joint_training.json",
+      "sha256": "6d04753ca30990fe9f01673c07065c8cd77dfb62478017d83b3acfd2d76c70d5",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/ablations/trainable_planner.json",
+      "sha256": "d7ea68f7c86bbe1290edb05926db9f4d60604e02e59be5899c882b83599ef211",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/train_stage1_planner.json",
+      "sha256": "75cc42b3fa426f66f0c181b218d31e96fbcdd7a280ebf4fd93a2eaf6a9fe24cb",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/configs/train_stage2_actor.json",
+      "sha256": "ac27854ed0147ba3bebb74dbcf00febf7c8b9b4c4536bee9a2ea04ef2bec1cb9",
+      "category": "configuration"
+    },
+    {
+      "path": "empire/datasets/__init__.py",
+      "sha256": "637bc1291884926b93b5827ae374723f846b2fe5eb6b2ccf61883a69c1e6ef4b",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/augment_utils.py",
+      "sha256": "f6630320c502922c8c8127e2e19201f41124861a4a1c02a87ee378d495a12bc5",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/calculate_statistics.py",
+      "sha256": "10e10493bc12360e1e2086fb3cb87ad4a1b2eaed919f688cc242d9f25ca74bcb",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/data_mixture.py",
+      "sha256": "84be47f05914fa201d821a0f639014ff140b1a7b57102fa5547fabb86a297d60",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/dataset.py",
+      "sha256": "5b7871619c71b8ccec42e1c05b9804b4209c268e1375d3e2e4fab08366fcd1f1",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/dataset_utils.py",
+      "sha256": "e9ddc80940c07437737ff6fd79d5a753246b4f8654345bc9dc96cbdee23468ff",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/human_dataset.py",
+      "sha256": "51ad5b2da580cf3a641c63695e50c1ad1685a5a68ead36aa0c4cb658996216a4",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/interp_utils.py",
+      "sha256": "4cac02c29f57cc9456f8c3d8676f932904bcec02af4a7df331d9d4ffe2918ab6",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/materialize.py",
+      "sha256": "1b91b56070f9f95a808cf3468f66523f09388fd56c7d34effcce9850367a9d06",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/schema.py",
+      "sha256": "c100a4c8f97863b604e4da4063a68b048635d7abb4fb791c3274f4875ef26321",
+      "category": "source"
+    },
+    {
+      "path": "empire/datasets/video_utils.py",
+      "sha256": "446b668a1afcbfaaaf3e36af122897513c1f1fd8b81d2d9cea4e5f43533e29af",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/__init__.py",
+      "sha256": "a19412de3e50449ee8b37df71a3bfd434afd86c901aef3554766fdb1a30afeb4",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/__init__.py",
+      "sha256": "29cc48b2cc8b2da542dc56161e2393ad473ccb3bf7a6fbc21b484b9327e9eed1",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/diffusion_policy.py",
+      "sha256": "ba94b9b343abb6253414bc86ac77fff9bbe06f5784165f4cab0ce3bc6bab7cec",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/diffusion_utils.py",
+      "sha256": "4bc929a713a1136bd96b5d88605f41707bf484fbabe448b0407764eb21502add",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/dit.py",
+      "sha256": "ff71c7efaf9cba259f17721c2b06c3d1a48da60ef5745c62ff521948dd5c935f",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/gaussian_diffusion.py",
+      "sha256": "50977d196d0e6fe76eb939304070045690951296306c42f9d7e421e15fb1f110",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/respace.py",
+      "sha256": "e1cdca3da8b4ae828b79b37b76432881d10248aa85044861a3e1cbb874e5d26b",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/action_model/timestep_sampler.py",
+      "sha256": "5e7c21f48cf85b91ff0030a9b5f33b74580e56d75004ed310aba9927a4a030ed",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/da_builder.py",
+      "sha256": "f7e9f60209752c6de0acc0e4d8fadf19c34c5eb431c660931b22a4588baab7b5",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/__init__.py",
+      "sha256": "655e5407159c83adf4a1a846bea005b5e59aab9bf5c20291b581225c60b08780",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/api.py",
+      "sha256": "39f3b6bfb2d98b28cff91ffc09c349d7c47500a1bcc2c8bd240b238601c8bb11",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/cfg.py",
+      "sha256": "655a018ab35ad715454fdbca047354591287b6b86c10c91b8c0a920df0153014",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/configs/da3metric-large.yaml",
+      "sha256": "b7051f0e1b000b7bc92d190fe87db5338364560aea2d290e0400eacf0d7dcb07",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/__init__.py",
+      "sha256": "e6fd99e59aec06a5f8a19255d11e7ecd9fa6482bdacad0e3e1a8fe2991cd64b6",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/da3.py",
+      "sha256": "5e17b4c87e2bc46b0a54188f66fec6bbf45266aa5627905be910051729a22459",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/__init__.py",
+      "sha256": "600038c9e4add58da49cc06c5a01c38dc7ded2a23c810a5c1f9aef28e513dd66",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/dinov2.py",
+      "sha256": "5d8e603113731365b3f46a3df4d159ad58f8723ec011440bf1961a4cbe101ca2",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/__init__.py",
+      "sha256": "321a97ffc00375d6d48569cbc851a38e7d2dc8bbdbfcffbee722c6c27783acda",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/attention.py",
+      "sha256": "d9db2bd66c612df689ec19aa2b60138c4185e38c8cfaaef48fc17f39a5b17c81",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/block.py",
+      "sha256": "88924cf5cd9fb18b17a8329e4c9910528205c302d8be40be29ad74e97ae7a3b8",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/drop_path.py",
+      "sha256": "80b5cc50297f3049d313c5659c1244901407bdac80cf424c5d7ed64ae79cd141",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/layer_scale.py",
+      "sha256": "23aba2710d7d425b5abd50c006edef9c9224360d6499171b6c1ec18ef73c0b00",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/mlp.py",
+      "sha256": "4f17c26120d04e4e4368b07a2396a977044b00d1dcbf1bbd1a9d3447be1aa6cf",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/patch_embed.py",
+      "sha256": "72f14d7b3daf3f545ba93c085b0a90f3b63efcf1a14f8d694dc77763c0607528",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/rope.py",
+      "sha256": "dcd09808cf03ceae7abfdcbe6805ee36990412b5308b09a86c4b51a040cff38b",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/layers/swiglu_ffn.py",
+      "sha256": "f0e0bab6e9e835b81c53bd69616af43d254a91af4b119923160b7df1602b1562",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dinov2/vision_transformer.py",
+      "sha256": "0b65bc398ebcfc0279c38647348a14c876e49d4292484232be1c6659afd4b662",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/dpt.py",
+      "sha256": "c9b071597c0da0430052c2629eebaf5a8c4aa75281ab46d0b8fcb32639a27801",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/utils/__init__.py",
+      "sha256": "600038c9e4add58da49cc06c5a01c38dc7ded2a23c810a5c1f9aef28e513dd66",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/utils/head_utils.py",
+      "sha256": "efed71ecd3b742d5969d1a938bbf34c9923d202dfd5232f204641c4674f0bd6b",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/model/utils/transform.py",
+      "sha256": "98d5c499f40e6e3e63cdaf0e269b8eeeb998ed125bcd63da41e2dec9ad32b8b9",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/registry.py",
+      "sha256": "fefb3b12c7d91acdf2ad478cf4809d23312fcb1b741062d977a0e85a6b16a57d",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/specs.py",
+      "sha256": "d1835f7e15db46d50d6cb27ecedbd8a358ad06d12fc6588fd271fd0fdbcd2df0",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/__init__.py",
+      "sha256": "600038c9e4add58da49cc06c5a01c38dc7ded2a23c810a5c1f9aef28e513dd66",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/alignment.py",
+      "sha256": "a2ffab39163e26d1f62ec43d9c47e1aa80f105e8ebc439f7557615d779574337",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/geometry.py",
+      "sha256": "e4ef349bbf9f07a6dda998769377d791c3ed9649a738b529a07080f08a187cd8",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/io/__init__.py",
+      "sha256": "600038c9e4add58da49cc06c5a01c38dc7ded2a23c810a5c1f9aef28e513dd66",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/io/input_processor.py",
+      "sha256": "cdebb6021f5f1001d3aa56261c224a80b9d8431efedfb040537c58a5509410c1",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/io/output_processor.py",
+      "sha256": "4c877deb4550736907162ae397c11a4b726a49fcbb2ab2c901e536814033469e",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/logger.py",
+      "sha256": "03ea0032564443ae6df63aa88ab9e4e63b5933ed10463acee607d0bea5836910",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/parallel_utils.py",
+      "sha256": "e691c31ab459e31e5e98231d67ef519199576b9425efd07273b7e137592514b6",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/depth_anything_3/utils/pose_align.py",
+      "sha256": "873d2d0f1087a7139f18b79b969ea859e63c7875f18870d9052f6dedfdc8bff5",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/mano.py",
+      "sha256": "eaf3e256daf9ad1ec579ed31f103f698fff4370cb0e7f49a1206f78fb6ef216f",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/vla/__init__.py",
+      "sha256": "b508ed19e0924460f01a8ce71066ef3e80a1d3a056930ca41a11cc2effcd29b7",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/vla/empire_planner.py",
+      "sha256": "97ca241295c3c3d7aeb14b40a457a0126adcba00118202e5c95182572bb72d16",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/vla_builder.py",
+      "sha256": "9a1423679dd36cd1f24301c4cbbab3c1cd17a33269f43dabee70547eb94cb1d4",
+      "category": "source"
+    },
+    {
+      "path": "empire/models/vlm_builder.py",
+      "sha256": "7ff602601fb943bbb8a62acd626c11ba8653d811d645939f57db87266cc48e74",
+      "category": "source"
+    },
+    {
+      "path": "empire/training/__init__.py",
+      "sha256": "6288a0bcbe41f41b63e920ce238ee9eba8c23d0259605d3b8a8700f6dfdc9b98",
+      "category": "source"
+    },
+    {
+      "path": "empire/training/base_strategy.py",
+      "sha256": "755a6d5a241355754940e6d1f5524a2c90d0073536e18b952f5d2144571aeff1",
+      "category": "source"
+    },
+    {
+      "path": "empire/training/fsdp.py",
+      "sha256": "280e528bc5bd884775c33b42ec384d4af51f36a1fc97ba08758a53c355b9b724",
+      "category": "source"
+    },
+    {
+      "path": "empire/training/metrics.py",
+      "sha256": "951a16cbae1c9d495b5d48b3f6d4b68c8eedab7c2c74bfc949e63ee3cbfa8ad4",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/__init__.py",
+      "sha256": "bbecdbd7e25943ed25f3642e40eb8b6049b42276c1d803f3c8ad31679cdf1d20",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/config_utils.py",
+      "sha256": "d31829eb1ed0e4e2dd1ad8ea55a93faaff1845ec75623033475051c098c3b5c6",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/data_utils.py",
+      "sha256": "63f2b65253b7c5dfe52eca7d980f680685549e08e0cd63f3118cb046d61a1b1a",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/mesh_utils.py",
+      "sha256": "5582e3c956dcf8e7de806975bbae956b71c2e8e5b7a74ff86cf584e51a37ec1a",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/nn_utils.py",
+      "sha256": "7aa0562eab374f0585bb53639b861f06b6c44b82384e938dda9cd32d844bc0d0",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/run_logger.py",
+      "sha256": "f01795539b42f67ee486b311d9c5250ee60a189fb23c3e6884d0a63d70c4d3bb",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/tensor_utils.py",
+      "sha256": "96e63d85c0a8fc651c80395491f58aa3163abf2e45295ea7ff04176938456ea1",
+      "category": "source"
+    },
+    {
+      "path": "empire/utils/torch_utils.py",
+      "sha256": "14a2097a081737f0e961c102ac53ac825679572730510ba5c3267b29dec8bed0",
+      "category": "source"
+    },
+    {
+      "path": "libs/__init__.py",
+      "sha256": "334359b90efed75da5f0ada1d5e6b256f4a6bd0aee7eb39c0f90182a021ffc8b",
+      "category": "source"
+    },
+    {
+      "path": "libs/models/__init__.py",
+      "sha256": "334359b90efed75da5f0ada1d5e6b256f4a6bd0aee7eb39c0f90182a021ffc8b",
+      "category": "source"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "9604c3d28d26e44dd4dc48e3cd5150bd7d39423dfc5c6e08853590f82429d840",
+      "category": "release-metadata"
+    },
+    {
+      "path": "scripts/compute_beingh0_metrics.py",
+      "sha256": "ed854502f3e2b45b7e09ae64acb631576e2eb6ada9fd0eff42f90f8e66add88c",
+      "category": "script"
+    },
+    {
+      "path": "scripts/compute_egodex_metrics.py",
+      "sha256": "4f3aa41581425dcc527c947f55282c3183d609bcb9172313663246fb1ff24b27",
+      "category": "script"
+    },
+    {
+      "path": "scripts/compute_statistic.sh",
+      "sha256": "b656a333bb1aa076cd25cd51b21666f4df4619774c2326a54e10603e30392ebf",
+      "category": "script"
+    },
+    {
+      "path": "scripts/compute_statistic_with_obj.sh",
+      "sha256": "a745831141bff7154e88cfcdde7414277294588c22a3c5f1090fe1dbafffa1c6",
+      "category": "script"
+    },
+    {
+      "path": "scripts/egodex_eval_utils.py",
+      "sha256": "f9aa07d3d76a078fc36e811b949a6ccde9f7d85c598c1c12d0195b5ff9925a32",
+      "category": "script"
+    },
+    {
+      "path": "scripts/eval_mse.py",
+      "sha256": "66524a3f9fb841c67319e2e3750932620d2bc04c1c9307959ec0fe83333b5d90",
+      "category": "script"
+    },
+    {
+      "path": "scripts/merge_eval_shards.py",
+      "sha256": "b67de594d0a855ff146a3bca87385dde07d38eed096d37ba47189cd453da9fb0",
+      "category": "script"
+    },
+    {
+      "path": "scripts/run_full_eval.sh",
+      "sha256": "79e20432a8c2c14ccda3c40e7f08f013963f344ee01cfb31f2f67c22ab772f24",
+      "category": "script"
+    },
+    {
+      "path": "scripts/summarize_egodex_all_tasks.py",
+      "sha256": "1f884ad61fba268cf50ddf1f8630780c5beb67059620f66fd92cc88796ac91ef",
+      "category": "script"
+    },
+    {
+      "path": "scripts/train.py",
+      "sha256": "907893d339cdc1b2657f1ec0eb457cf9a232eca7f95dfebce01e0f2542da2176",
+      "category": "script"
+    },
+    {
+      "path": "tests/test_compute_egodex_metrics.py",
+      "sha256": "c2535989330b92f62e4c064df116ae136b36cb4db6b49ac5a05d506a7b831e47",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_data_schema.py",
+      "sha256": "42e46f3465d0e43f3763f6a2d6fc56cd65bc0533681d4eeb058672fd7b6deb5a",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_diffusion_policy_loss_weights.py",
+      "sha256": "2f21212405105012ce866999432b439af64f9af9d8c5d2e1ce4fdf57e47aa66f",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_pose_alignment.py",
+      "sha256": "9333b50b916aef783ca5e75d7fa116a2ca212ba4fc43bb32dad03cf312b51223",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_predicted_plan_source.py",
+      "sha256": "08e41adafe8a9d47ba21b65fb882ebe6256c3d7589299c402fcdcbab87046026",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_public_configs.py",
+      "sha256": "6edb5bf82d5032a57a292dd9a8b672463c7bf7f2a9b574f46c4a973668b8831f",
+      "category": "test"
+    },
+    {
+      "path": "tests/test_wheel_import_smoke.py",
+      "sha256": "021a5209f62d50c4bb768c5cc17a1c9ef8d511ad7c5863c63ac1bdd62ce18c46",
+      "category": "test"
+    }
+  ]
+}
