@@ -44,6 +44,18 @@ The public JSON recipes use these variables:
 
 Unset variables produce a clear error when a config is loaded. Model backbones use the public Hugging Face IDs `google/paligemma2-3b-mix-224` and `depth-anything/DA3METRIC-LARGE`, not local snapshot paths.
 
+## Compute dataset statistics
+
+Dataset statistics must be generated **before Stage I training**. For the documented Hugging Face-style layout, the loader expects them at `<DATA_ROOT>/<DATASET_NAME>/statistics.json`.
+
+```bash
+export DATA_ROOT=/path/to/data
+export DATASET_NAME=my_dataset
+bash scripts/compute_statistic.sh
+```
+
+To write to a different location, set `STATISTICS_OUTPUT` explicitly and make the corresponding loader configuration point to that file. Object-aware statistics can be computed with `scripts/compute_statistic_with_obj.sh`.
+
 ## Training
 
 Stage I:
@@ -83,14 +95,13 @@ Configuration evidence for the two plan comparisons is explicit:
 
 `tests/test_public_configs.py` recursively enforces the supplementary pair equality after removing those three plan-source ABI fields.
 
-## Statistics and evaluation
+## Evaluation
 
 ```bash
-bash scripts/compute_statistic.sh
 bash scripts/run_full_eval.sh
 ```
 
-Both entry points are environment-driven and fail before work begins when required paths are absent. `scripts/run_full_eval.sh` lists all required variables at its start. Evaluation and training task assignment use `DATA_ROOT` / `DATASET_NAME` and `TRAIN_DATA_ROOT` / `TRAIN_DATASET_NAME` respectively (`TRAIN_DATA_ROOT` defaults to `DATA_ROOT`); both pairs are resolved through the same preferred/legacy schema resolver before any GPU work starts.
+The evaluation entry point is environment-driven and fails before work begins when required paths are absent. `scripts/run_full_eval.sh` lists all required variables at its start. Evaluation and training task assignment use `DATA_ROOT` / `DATASET_NAME` and `TRAIN_DATA_ROOT` / `TRAIN_DATASET_NAME` respectively (`TRAIN_DATA_ROOT` defaults to `DATA_ROOT`); both pairs are resolved through the same preferred/legacy schema resolver before any GPU work starts.
 
 ## Acknowledgements
 

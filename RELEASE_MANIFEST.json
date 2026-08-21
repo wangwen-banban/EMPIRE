@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-08-21T02:47:56Z",
+  "generated_at_utc": "2026-08-21T02:50:43Z",
   "manifest": {
     "path": "RELEASE_MANIFEST.json",
     "status": "self-excluded",
@@ -8,7 +8,7 @@
   },
   "summary": {
     "file_count": 117,
-    "total_bytes": 973865,
+    "total_bytes": 974279,
     "category_counts": {
       "configuration": 14,
       "documentation": 5,
@@ -47,7 +47,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "f9d9cade3978e3bd589b2dec3e0a17846e68e81cec2bb20e0c39181c947609cc",
+      "sha256": "981892f580510afb9931465ec2e67c7a00c2219d445245457e7762966839d02f",
       "category": "documentation"
     },
     {
@@ -532,12 +532,12 @@
     },
     {
       "path": "scripts/compute_statistic.sh",
-      "sha256": "b656a333bb1aa076cd25cd51b21666f4df4619774c2326a54e10603e30392ebf",
+      "sha256": "9faa9acbc422c45b7ae11d312c21102dd6f82be2157f362bd101de7d73b58b52",
       "category": "script"
     },
     {
       "path": "scripts/compute_statistic_with_obj.sh",
-      "sha256": "a745831141bff7154e88cfcdde7414277294588c22a3c5f1090fe1dbafffa1c6",
+      "sha256": "1e94267e82856a7fddd329a6f68e04ab5884e5e331d5b1d445e979bc57295f77",
       "category": "script"
     },
     {
