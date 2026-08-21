@@ -1,10 +1,15 @@
 # EMPIRE
 
-EMPIRE is a two-stage system for egocentric hand-motion prediction. Stage I uses a PaliGemma 2 planner with RGB, Depth Anything 3 features, caption, and field-of-view conditioning. Stage II freezes the planner and condition encoders, then trains a DiT-B actor with flow matching to predict 60 future frames at 12 FPS.
+**Explicit Manipulation Planning as a Learnable Intermediate Representation for Egocentric Hand-Motion Forecasting**
 
-This public research release contains the final Stage I and Stage II recipes, paper-table ablations, runtime loaders, training code, and evaluation utilities. Model weights, MANO assets, dataset files, and preprocessing code are not included.
+Forecasting dexterous hand motions from egocentric observations is fundamental to intelligent interactive systems. Existing vision-language approaches typically map observations directly to future motions, overlooking the manipulation process that governs hand-object interactions. EMPIRE addresses this limitation by introducing explicit manipulation planning as a learnable intermediate representation for egocentric hand-motion forecasting.
 
-> **License note:** DiT-derived files are under Creative Commons Attribution-NonCommercial 4.0 and restrict commercial use. The root MIT license does not override third-party terms. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before use or redistribution.
+EMPIRE follows a two-stage **plan-then-act** framework:
+
+- **Stage I — Learn to Plan:** the Planner predicts explicit, temporally ordered manipulation plans that describe the progression of per-hand interactions from multimodal egocentric context.
+- **Stage II — Learn to Act:** a flow-matching Actor synthesizes future bimanual hand motions conditioned on the frozen Planner representations, decoupling high-level manipulation understanding from low-level motion generation.
+
+Under a unified training and evaluation protocol, EMPIRE achieves an MPJPE of **84.53 mm** and a finger-relative error of **38.97 mm** on the held-out EgoDex benchmark. This repository provides the official implementation, training recipes, and evaluation code for EMPIRE.
 
 ## Paper
 
