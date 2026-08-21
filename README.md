@@ -93,6 +93,10 @@ bash scripts/run_full_eval.sh
 
 Both entry points are environment-driven and fail before work begins when required paths are absent. `scripts/run_full_eval.sh` lists all required variables at its start. Evaluation and training task assignment use `DATA_ROOT` / `DATASET_NAME` and `TRAIN_DATA_ROOT` / `TRAIN_DATASET_NAME` respectively (`TRAIN_DATA_ROOT` defaults to `DATA_ROOT`); both pairs are resolved through the same preferred/legacy schema resolver before any GPU work starts.
 
+## Acknowledgements
+
+We sincerely thank the authors of [VITRA](https://github.com/microsoft/VITRA) for releasing their code and the VITRA-1M data format, which provided an important foundation for this work. We also thank the authors of [Being-H0](https://github.com/BeingBeyond/Being-H0) for releasing their models and code, which supported the comparative evaluation in EMPIRE.
+
 ## Licensing
 
 `LICENSE` preserves the MIT license supplied with the VITRA-derived source. Bundled and adapted third-party files have additional terms. Complete notices and redistributed license material are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [`LICENSES/`](LICENSES/).
