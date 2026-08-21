@@ -9,7 +9,6 @@ This public research release contains the final Stage I and Stage II recipes, pa
 ## Paper
 
 - ArXiv: Coming Soon
-- Citation: Coming Soon
 
 ## Dataset
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-08-21T02:46:58Z",
+  "generated_at_utc": "2026-08-21T02:47:56Z",
   "manifest": {
     "path": "RELEASE_MANIFEST.json",
     "status": "self-excluded",
@@ -8,7 +8,7 @@
   },
   "summary": {
     "file_count": 117,
-    "total_bytes": 973889,
+    "total_bytes": 973865,
     "category_counts": {
       "configuration": 14,
       "documentation": 5,
@@ -47,7 +47,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "6f0e48fbb3c3c0c321ab7ec4320994d1eb2878d295a09d730f646c71ab407e40",
+      "sha256": "f9d9cade3978e3bd589b2dec3e0a17846e68e81cec2bb20e0c39181c947609cc",
       "category": "documentation"
     },
     {
